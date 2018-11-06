@@ -1,0 +1,114 @@
+<!--
+  Generated template for the MathsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-title>Mathematics</ion-title>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list radio-group [(ngModel)]="Q1">
+        <ion-list-header>
+          Maths
+        </ion-list-header>
+      
+        <h5>Whats is the answer of 1 + 1?</h5>
+        <ion-item>
+          <ion-label>1</ion-label>
+          <ion-radio value="1"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>2</ion-label>
+            <ion-radio value="2"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label>4</ion-label>
+              <ion-radio value="4"></ion-radio>
+            </ion-item>
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q2">
+        <h5>Whats is X * X?</h5>
+        <ion-item>
+          <ion-label>2x</ion-label>
+          <ion-radio value="2x"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>X^2</ion-label>
+            <ion-radio value="X^2"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>2X^2</ion-label>
+              <ion-radio value="2X^2"></ion-radio>
+            </ion-item>
+
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q3">
+        <h5>what is the square root of 16?</h5>
+        <ion-item>
+          <ion-label>8</ion-label>
+          <ion-radio value="8" ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>2</ion-label>
+            <ion-radio value="2"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>4</ion-label>
+              <ion-radio value="4"></ion-radio>
+            </ion-item>
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q4">
+        <h5>Calculate the following 2(x + 3) + 4x(1)?</h5>
+        <ion-item>
+            <ion-label>8x + 4</ion-label>
+            <ion-radio value="8x + 4" ></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>6x + 6</ion-label>
+              <ion-radio value="6x + 6"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>6x + 4x</ion-label>
+                <ion-radio value="6x + 4x"></ion-radio>
+              </ion-item>
+</ion-list>
+
+              <ion-list radio-group [(ngModel)]="Q5">
+          <h5>calculate the following 2(x+2)(x+2) + 2?</h5>
+          <ion-item>
+              <ion-label>2x^2 + 8x + 8 + 2</ion-label>
+              <ion-radio value="2x^2 + 8x + 8 + 2" ></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>2x^2 + 8x + 10</ion-label>
+                <ion-radio value="2x^2 + 8x + 10"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>2(x^2 + 2x + 2x + 4) + 2</ion-label>
+                  <ion-radio value="2(x^2 + 2x + 2x + 4) + 2"></ion-radio>
+                </ion-item>
+      </ion-list>
+      <div class="box">
+        <p>Score: {{score}}</p>
+      </div>
+
+<div align="right">
+      <button ion-button color="secondary" (click)="NewMethod()">Next</button>
+    </div>
+
+</ion-content>

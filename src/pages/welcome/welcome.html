@@ -1,0 +1,108 @@
+
+<ion-header>
+    <ion-title>Welcome</ion-title>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list radio-group [(ngModel)]="Q1">
+        <ion-list-header>
+         <b>Technology </b> 
+        </ion-list-header>
+      
+        
+        <h5>Whos the founder of Apple?</h5>
+        <ion-item>
+          <ion-label>Bill Gates</ion-label>
+          <ion-radio value="Bill Gates"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Alexandre Bells</ion-label>
+            <ion-radio value="Alexandre Bells"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label>Steve Jobs</ion-label>
+              <ion-radio value="Steve Jobs"></ion-radio>
+            </ion-item>
+</ion-list>
+
+<ion-list radio-group [(ngModel)]="Q2">
+        <h5>Who created a phone?</h5>
+        <ion-item>
+          <ion-label>Steve Jobs</ion-label>
+          <ion-radio value="Steve Jobs"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>Alex Dredrick</ion-label>
+            <ion-radio value="Alex dredrick"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Alexandre Bells</ion-label>
+              <ion-radio value="Alexandre Bells"></ion-radio>
+            </ion-item>
+          </ion-list>
+
+    <ion-list radio-group [(ngModel)]="Q3">
+        <h5>Who developed C++ language?</h5>
+        <ion-item>
+          <ion-label>Bjarne Stroustrup</ion-label>
+          <ion-radio value="Bjarne Stroustrup" ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>James Gosling</ion-label>
+            <ion-radio value="James Gosling"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Brendan Eich</ion-label>
+              <ion-radio value="Brendan Eich"></ion-radio>
+            </ion-item>
+            </ion-list>
+
+   <ion-list radio-group [(ngModel)]="Q4">
+        <h5>who created whatsapp?</h5>
+        <ion-item>
+            <ion-label>Jan Koum</ion-label>
+            <ion-radio value="Jan Koum" ></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Mark Zuckerburg</ion-label>
+              <ion-radio value="Mark Zuckerburg"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Kevin Systrom</ion-label>
+                <ion-radio value="Kevin Systrom"></ion-radio>
+              </ion-item>
+            </ion-list>
+    
+   <ion-list radio-group [(ngModel)]="Q5" >
+              <h5>Who created Instagram?</h5>
+          <ion-item>
+              <ion-label>Kevin Systrom</ion-label>
+              <ion-radio value="Kevin Systrom" ></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Jan Koum</ion-label>
+                <ion-radio value="Jan Koum"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Mark Zuckerburg</ion-label>
+                  <ion-radio value="Mark Zuckerburg"></ion-radio>
+                </ion-item>
+      </ion-list>
+
+      <div class="box">
+        <p>Score: {{score}}</p>
+      </div>
+<div align="right">
+      <button ion-button color="secondary" (click)="NewMethod()">Next</button>
+    </div>
+     
+</ion-content>

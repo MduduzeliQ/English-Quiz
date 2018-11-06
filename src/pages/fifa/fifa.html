@@ -1,0 +1,111 @@
+<ion-header>
+    <ion-title>Fifa</ion-title>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list radio-group [(ngModel)]="Q1">
+        <ion-list-header>
+         <b>Football</b>  
+        </ion-list-header>
+      
+        <h5>Who was the winner of Ballon D'or 2015?</h5>
+        <ion-item>
+          <ion-label>Leo Messi</ion-label>
+          <ion-radio value="Leo Messi"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Cristiano Ronaldo</ion-label>
+            <ion-radio value="Cristiano Ronaldo"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label>Neymar jr</ion-label>
+              <ion-radio value="Neymar jr"></ion-radio>
+            </ion-item>
+            </ion-list>
+
+
+       <ion-list radio-group [(ngModel)]="Q2">    
+        <h5>Who was the winner of 2010 Fifa world cup in SA?</h5>
+        <ion-item>
+          <ion-label>Spain</ion-label>
+          <ion-radio value="Spain"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>Brazil</ion-label>
+            <ion-radio value="Brazil"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Germany</ion-label>
+              <ion-radio value="Germany"></ion-radio>
+            </ion-item>
+            </ion-list>
+
+
+            <ion-list radio-group [(ngModel)]="Q3">        
+        <h5>Who won more than 2 world cup in history?</h5>
+        <ion-item>
+          <ion-label>Pele</ion-label>
+          <ion-radio value="Pele" ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Zico</ion-label>
+            <ion-radio value="Zico"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Crespo</ion-label>
+              <ion-radio value="Crespo"></ion-radio>
+            </ion-item>
+
+</ion-list>
+
+<ion-list radio-group [(ngModel)]="Q4">
+        <h5>Whos the best player of all time?</h5>
+        <ion-item>
+            <ion-label>Pele</ion-label>
+            <ion-radio value="Pele" ></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Messi</ion-label>
+              <ion-radio value="Messi"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Cristiano Ronaldo</ion-label>
+                <ion-radio value="Cristiano Ronaldo"></ion-radio>
+              </ion-item>
+
+              </ion-list>
+
+         <ion-list radio-group [(ngModel)]="Q5">
+          <h5>Who won more than 4 Ballon D'or in history?</h5>
+          <ion-item>
+              <ion-label>Messi</ion-label>
+              <ion-radio value="Messi" ></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Cristiano Ronaldo</ion-label>
+                <ion-radio value="Cristiano Ronaldo"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Zidane</ion-label>
+                  <ion-radio value="Zidane"></ion-radio>
+                </ion-item>
+      </ion-list>
+
+      <div class="box">
+        <p>Score: {{score}}</p>
+      </div>
+
+<div align="right">
+ <button ion-button color="secondary" (click)="NewMethod()">Next</button>
+    </div>
+</ion-content>

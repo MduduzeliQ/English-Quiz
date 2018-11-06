@@ -1,0 +1,37 @@
+page-done {
+  .p{
+      font-family: sans-serif;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+  }
+  ion-content{
+    background-image: url('../../assets/back.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ion-titles{
+    color: rgb(64, 159, 59);
+    background: rgb(222, 224, 182);
+    box-shadow: 2px 3px 4px 4px;
+    text-align:center;
+}
+h5{
+    font-family: serif;
+    font-weight: bold;
+}
+ion-label{
+    font-family: serif
+}
+ion-footer{
+    color: wheat;
+    text-align: center;
+    font-family: serif;
+}
+ion-title{
+    text-align: right;
+    background-color:rgb(98, 255, 0);
+}
+}

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Quiz
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <br>
+    <ion-card>
+        <ion-item>
+          <ion-label floating>Enter Name</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="Name"></ion-input>
+          </ion-item>
+        </ion-card>
+  <div class="btn">
+    <button ion-button small color="secondary" (click)="Welcome()">START</button>
+  </div>
+<ion-footer>
+<ion-toolbar color="secondary">
+<p>&copy;2018 DLAMINI</p>
+</ion-toolbar>
+</ion-footer>
+
+</ion-content>

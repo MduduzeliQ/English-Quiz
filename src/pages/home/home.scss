@@ -1,0 +1,28 @@
+page-home {
+ion-content{
+    background-image: url('../../assets/yah.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-footer{
+    color: wheat;
+    text-align: center;
+    font-family: serif;
+}
+ion-navbar{
+    font-family: serif;
+}
+.btn{
+    text-align:center;
+    margin-top: 400px;
+    font-family: serif;
+}
+ion-icon{
+    color: red;
+}
+ion-card{
+    background: transparent;
+}
+}

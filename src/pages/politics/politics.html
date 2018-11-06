@@ -1,0 +1,113 @@
+<!--
+  Generated template for the PoliticsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-title>Political</ion-title>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list radio-group [(ngModel)]="Q1">
+        <ion-list-header>
+        <b> Politics</b> 
+        </ion-list-header>
+      
+        <h5>Who was the president after Nelson Mandela?</h5>
+        <ion-item>
+          <ion-label>Jacob Zuma</ion-label>
+          <ion-radio value="Jacob Zuma"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Thabo Mbeki</ion-label>
+            <ion-radio value="Thabo Mbeki"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label>Chris Hani</ion-label>
+              <ion-radio value="Chris Hani"></ion-radio>
+            </ion-item>
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q2">
+        <h5>Who was the president of USA before Donald Trump?</h5>
+        <ion-item>
+          <ion-label>George Washington</ion-label>
+          <ion-radio value="George Washington"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>George W Bush</ion-label>
+            <ion-radio value="George W Bush"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Barack Obama</ion-label>
+              <ion-radio value="Barack Obama"></ion-radio>
+            </ion-item>
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q3">
+        <h5>Who is the president of Irag?</h5>
+        <ion-item>
+          <ion-label>Fuad Masum</ion-label>
+          <ion-radio value="Fuad Masum" ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>James Mubaba</ion-label>
+            <ion-radio value="James Mubaba"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Hassan Rouhani</ion-label>
+              <ion-radio value="Hassan Rouhani"></ion-radio>
+            </ion-item>
+          </ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q4">
+        <h5>How old is Kim Jong-un?</h5>
+        <ion-item>
+            <ion-label>45</ion-label>
+            <ion-radio value="45" ></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>32</ion-label>
+              <ion-radio value="32"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>72</ion-label>
+                <ion-radio value="72"></ion-radio>
+              </ion-item>
+</ion-list>
+
+              <ion-list radio-group [(ngModel)]="Q5">
+          <h5>who is the present leader of DA?</h5>
+          <ion-item>
+              <ion-label>Helen Zille</ion-label>
+              <ion-radio value="Helen Zille" ></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Musa Maimane</ion-label>
+                <ion-radio value="Musa Maimane"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>De Lille</ion-label>
+                  <ion-radio value="De Lille"></ion-radio>
+                </ion-item>
+      </ion-list>
+
+      <div class="box">
+        <p>Score: {{score}}</p>
+      </div>
+
+      <div align="right">
+      <button ion-button color="secondary" (click)="NewMethod()">Next</button>
+    </div>
+
+</ion-content>

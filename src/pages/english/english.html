@@ -1,0 +1,111 @@
+<!--
+  Generated template for the EnglishPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-title>Language</ion-title>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list radio-group [(ngModel)]="Q1">
+        <ion-list-header>
+        <b>English</b>  
+        </ion-list-header>
+      
+        <h5>This is Carlos. ...my friend and classmate?</h5>
+        <ion-item>
+          <ion-label>He</ion-label>
+          <ion-radio value="He"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>His</ion-label>
+            <ion-radio value="His"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label>He's</ion-label>
+              <ion-radio value="He's"></ion-radio>
+            </ion-item>
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q2">
+        <h5>When did Nelson Mandela came out of jail?</h5>
+        <ion-item>
+          <ion-label>1990</ion-label>
+          <ion-radio value="1990"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>1993</ion-label>
+            <ion-radio value="1993"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>1994</ion-label>
+              <ion-radio value="1994"></ion-radio>
+            </ion-item>
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q3">
+        <h5>Who killed Chris Hani?</h5>
+        <ion-item>
+          <ion-label>Janusz Waluś</ion-label>
+          <ion-radio value="Janusz Waluś" ></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>George Grey</ion-label>
+            <ion-radio value="George Grey"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Osmane Gin</ion-label>
+              <ion-radio value="Osmane Gin"></ion-radio>
+            </ion-item>
+</ion-list>
+
+            <ion-list radio-group [(ngModel)]="Q4">
+        <h5>Do you think corruption will ever end in SA?</h5>
+        <ion-item>
+            <ion-label>Yes</ion-label>
+            <ion-radio value="Yes" ></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>No</ion-label>
+              <ion-radio value="No"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Maybe</ion-label>
+                <ion-radio value="Maybe"></ion-radio>
+              </ion-item>
+</ion-list>
+
+              <ion-list radio-group [(ngModel)]="Q5">
+          <h5>Who created HIV?</h5>
+          <ion-item>
+              <ion-label>Dr Robert Gallo</ion-label>
+              <ion-radio value="Dr Robert Gallo" ></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Dr Steven Grag</ion-label>
+                <ion-radio value="Dr Steven Grag"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Dr Larry Newton</ion-label>
+                  <ion-radio value="Dr Larry Newton"></ion-radio>
+                </ion-item>
+      </ion-list>
+      <div class="box">
+        <p>Score: {{score}}</p>
+      </div>
+      <div align="right">
+      <button ion-button color="secondary" (click)="NewMethod()">Next</button>
+      </div>
+</ion-content>
